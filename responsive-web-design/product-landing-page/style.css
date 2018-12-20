@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Quicksand');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Quicksand;
+}
+
+#header {
+    position: fixed;
+    background: #358;
+    width: 100%;
+    color: white;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+}
+
+#nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo {
+    width: 60vw;
+    flex-direction: row;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    margin-left: 40px;
+    font-size: 18px;
+    font-weight: 1000;
+}
+
+.logo a {
+    color: #90e9ff;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    max-width: 25px;
+    max-height: 20px;
+    display: flex;
+}
+
+#links {
+    width: 35vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 30px;
+}
+
+#links a {
+    color: white;
+    padding: 10px;
+    font-weight: 650;
+    margin: 5px 10px 3px 3px;;
+    text-decoration: none;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#video-test {
+    display: none;
+}
+
+#features {
+    width: 100%;
+}
+
+.content {
+    width: 100%;
+    /*background-image: linear-gradient(to bottom right, #cef, #fff);*/
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.content #photo {
+    background: url(https://static1.squarespace.com/static/510aaf16e4b0016a672b6c1e/t/5a8d9f79e4966be47976a527/1519230849953/man-breathing.jpg?format=1500w) no-repeat;
+    width: 1000vw;
+    height: 667px;
+    margin: 0;
+    padding: 0;
+    max-height: 33vw;
+    max-width: 50vw;
+    background-size: contain;
+    box-sizing: border-box;
+    box-shadow: inset -50px 0 50px 10px #FFF;
+}
+
+#motto {
+    font-size: 28px;
+    font-weight: 700;
+    text-align: center;
+    width: 70%;
+}
+
+#slogan {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#motto-2 {
+    width: 70%;
+    font-family: "Open Sans";
+}
+
+#features {
+    margin-top: 0px;
+    background-color: #E8F7FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Open Sans";
+}
+
+#feature-list {
+    width: 50%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#features h3 {
+    margin-right: auto;
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+
+#features h5 {
+    margin-top: 5px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#logo-list {
+    margin-top: 50px;
+}
+
+#logo-list img {
+    height: 50px;
+    padding: 0 30px 0 30px;
+}
+
+#year-product img {
+    margin-top: 40px;
+    height: 100px;
+    margin-bottom: 40px;
+}
+
+#video-div {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#video-div h6 {
+    margin-top: 0px;
+    font-weight: 200;
+    font-size: 12px;
+}
+
+#products {
+    padding-top: 40px;
+    background-color: #358;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    font-family: "Open Sans";
+}
+
+#product-selection {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.product-title {
+    width: 100%;
+    background: #247;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-top: 10px;
+    top: 0%;
+}
+
+.product-title h3 {
+    padding: 5px 0 0 0;
+    margin: 0;
+}
+
+.product-title h5 {
+    padding: 0 0 7px 0;
+    margin: 0;
+    color: #cdf;
+}
+
+.product {
+    display: flex;
+    margin: 30px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid white;
+    padding-bottom: 20px;
+}
+
+.product ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 25px 15% 0 0;
+    list-style: inside;
+}
+
+.product li {
+    margin-bottom: 10px;
+}
+
+#select-product {
+    padding: 2px;
+    font-size: 12px;
+}
+
+form {
+    margin: 50px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 20vm;
+}
+
+form #email {
+    border: none;
+    text-size: 30px;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+form .btn {
+    width: 100px;
+    border: none;
+    color: white;
+    margin: 10px;
+    text-size: 26px;
+    font-family: Quicksand;
+    background-color: #035;
+    border-radius: 2px;
+    padding: 10px;
+    font-weight: 1000;
+}
+
+@media (max-width: 650px) {
+    .logo {
+        margin-top: 15px;
+        width: 100%;
+        position: relative;
+    }
+}
