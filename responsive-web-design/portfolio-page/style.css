@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway|Open+Sans|Arapey|Roboto+Slab');
+
+html, body {
+    background-color: #f9fff9;
+    margin: 0;
+    font-family: "Open Sans";
+    padding: 0;
+}
+
+#welcome-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#welcome-section h1 {
+    margin: 20px 0 10px 0;
+    font-family: Raleway;
+    font-weight: 200;
+}
+
+#welcome-section h4 {
+    margin: 10px 0 10px 0;
+    font-size: 14px;
+    font-weight: 200;
+    width: 50vw;
+    text-align: center;
+    color: #232;
+}
+
+hr {
+    color: black;
+    width: 20vw;
+}
+
+#navbar {
+    background-color: #f9fff9;
+    top: 0;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    z-index: 42;
+}
+
+#navbar ul {
+    display: flex;
+    list-style: inside;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+    list-style-type: none;
+}
+
+#navbar li {
+    display: inline-block;
+}
+
+#navbar a {
+    font-family: "Roboto Slab";
+    text-decoration: none;
+    font-weight: 100;
+    color: #030;
+    font-size: 13px;
+    padding: 0 20px;
+}
+
+#profile-links img {
+    height: 20px;
+    margin: 15px 5px;
+}
+
+#profile-image {
+    width: 10%;
+    filter: grayscale(70%);
+    border-radius: 100%;
+    object-fit: cover;
+
+}
+
+#content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title-fade {
+    opacity: 1;
+    transition: opacity .1s ease-in-out;
+}
+
+.title-fade:hover {
+    opacity: 0.4;
+}
+
+#projects h1 {
+    margin: 20px 0 10px 0;
+    font-family: Raleway;
+    font-weight: 200;
+}
+
+#projects h2 {
+    font-family: "Open Sans";
+    font-weight: 600;
+    color: #030;
+    font-size: 16px;
+    margin: 40px 0 0 0;
+}
+
+#projects {
+    justify-content: center;
+    text-align: center;
+}
+
+.project-tiles {
+    display: flex;
+    flex-direction: row;
+    margin: 5px 0 20px 0;
+    padding: 0 100px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-tile {
+    border: 1px solid #bdb;
+    border-radius: 3px;
+    height: auto;
+    margin: 20px 20px;
+    max-width: 22vw;
+    background-color: white;
+    font-family: "Open Sans";
+    font-weight: 100;
+    font-size: 14px;
+}
+
+.project-tile p {
+    padding: 0 5px;
+}
+
+.project-tile img {
+    width: 100%;
+}
+
+.project-title {
+    font-size: 18px;
+    margin-top: 10px;
+    font-family: "Raleway";
+    font-weight: 100;
+    margin-bottom: 3px;
+}
+
+.project-hackathon {
+    font-style: italic;
+    font-size: 13px;
+    margin: 2px;
+    font-weight: 200;
+}
+
+.project-link {
+    font-size: 12px;
+    margin: 0 5px;
+    color: #8d8;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    color: white;
+    font-family: "Roboto Slab";
+    font-size: 12px;
+    padding: 15px 0 0 0;
+    align-items: center;
+    height: 18px;
+}
+
+footer a {
+    margin-top: 30px;
+    padding: 15px 0 5px 0;
+}
+
+.project-tags {
+    color: #ccc;
+    font-size: 10px;
+}
+
+@media (max-width: 700px) {
+    .project-tiles {
+        flex-direction: column;
+        padding: 0 10px;
+    }
+
+    .project-tile {
+        max-width: 80vw;
+    }
+
+    #welcome-section h4 {
+        width: 85%;
+    }
+
+    #navbar {
+        height: 90px;
+    }
+
+    #navbar ul {
+        margin-top: 15px;
+        flex-direction: column;
+    }
+}
+
+/* TO DO:
+ * fill information
+ * upload to codepen
+ * add language options
+ * read more indicator and new div that pops up
+ * /

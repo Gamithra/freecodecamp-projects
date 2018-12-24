@@ -50,6 +50,7 @@ html, body {
 .main-section header {
     font-size: 24px;
     font-weight: 700;
+    text-align: left;
     font-family: Montserrat, sans-serif;
 }
 
@@ -107,10 +108,6 @@ code {
 
     #navbar a {
         margin: 5px 0 0 0;
-    }
-
-    .main-section header {
-        text-align: left;
     }
 
     code {
