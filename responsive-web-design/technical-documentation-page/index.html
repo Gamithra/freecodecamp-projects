@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+    <main id="main-doc">
+        <nav id="navbar">
+            <div id="header-div">
+                <header>Getting Started with Python</header>
+            </div>
+            <a class="nav-link" href="#What_is_Python?">What is Python?</a>
+            <a class="nav-link" href="#What_can_Python_do?">What can Python do?</a>
+            <a class="nav-link" href="#Good_to_know">Good to know</a>
+            <a class="nav-link" href="#Python_Syntax_compared_to_other_programming_languages">Python Syntax compared to other programming languages</a>
+            <a class="nav-link" href="#Python_Install">Python Install</a>
+            <a class="nav-link" href="#Python_Quickstart">Python Quickstart</a>
+            <a class="nav-link" href="#The_Python_Command_Line">The Python Command Line</a>
+            <a class="nav-link" href="#Reference">Reference</a>
+        </nav>
+        <div class="content">
+        <section class="main-section" id="What_is_Python?">
+            <header>What is Python?</header>
+	    	<p>Python is a popular programming language. It was created in 1991 by Guido van Rossum.</p>
+	    	<p>It is used for:</p>
+			<ul>
+			<li>web development (server-side), </li>
+			<li>software development, </li>
+			<li>mathematics,</li>
+			<li>system scripting.</li>
+			</ul>
+		</section>
+		<section class="main-section" id="What_can_Python_do?">
+			<header>What can Python do?</header>
+			<ul>
+				<li>Python can be used on a server to create web applications.</li>
+				<li>Python can be used alongside software to create workflows.</li>
+				<li>Python can connect to database systems. It can also read and modify files.</li>
+				<li>Python can be used for rapid prototyping, or for production-ready software development.</li>
+			</ul>
+        </section>
+		<section class="main-section" id="Good_to_know">
+			<header>Good to know</header>
+			<ul>
+				<li>The most recent major version of Python is Python 3, which we shall be using in this tutorial. However, Python 2, although not being updated with anything other than security updates, is still quite popular.</li>
+				<li>In this tutorial Python will be written in a text editor. It is possible to write Python in an Integrated Development Environment, such as Thonny, Pycharm, Netbeans or Eclipse which are particularly useful when managing larger collections of Python files.</li>
+			</ul>
+		</section>
+		<section class="main-section" id="Python_Syntax_compared_to_other_programming_languages">
+			<header>Python Syntax compared to other programming languages</header>
+			<ul>
+				<li>Python was designed to for readability, and has some similarities to the English language with influence from mathematics.</li>
+				<li>Python uses new lines to complete a command, as opposed to other programming languages which often use semicolons or parentheses.</li>
+				<li>Python relies on indentation, using whitespace, to define scope; such as the scope of loops, functions and classes. Other programming languages often use curly-brackets for this purpose.</li>
+			</ul>
+		</section>
+		<section class="main-section" id="Python_Install">
+			<header>Python Install</header>
+			<p>Many PCs and Macs will have python already installed.</p>
+			<p>To check if you have python installed on a Windows PC, search in the start bar for Python or run the following on the Command Line (cmd.exe):</p>
+			<code>C:\Users\Your Name>python --version</code>
+			<p>To check if you have python installed on a Linux or Mac, then on linux open the command line or on Mac open the Terminal and type:</p>
+			<code>python --version</code>
+			<p>If you find that you do not have python installed on your computer, then you can download it for free from the following website: https://www.python.org/</p>
+		</section>
+		<section class="main-section" id="Python_Quickstart">
+			<header>Python Quickstart</header>
+			<p>Python is an interpreted programming language, this means that as a developer you write Python (.py) files in a text editor and then put those files into the python interpreter to be executed.</p>
+			<p>The way to run a python file is like this on the command line:</p>
+			<code>C:\Users\Your Name>python helloworld.py</code>
+			<p>Where "helloworld.py" is the name of your python file.</p>
+			<p>Let's write our first Python file, called helloworld.py, which can be done in any text editor.</p>
+			<code>print("Hello, World!")</code>
+			<p>Simple as that. Save your file. Open your command line, navigate to the directory where you saved your file, and run:</p>
+			<code>C:\Users\Your Name>python helloworld.py</code>
+			<p>The output should read:</p>
+			<code>Hello, World!</code>
+			<p>Congratulations, you have written and executed your first Python program.</p>
+		</section>
+		<section class="main-section" id="The_Python_Command_Line">
+			<header>The Python Command Line</header>
+			<p>To test a short amount of code in python sometimes it is quickest and easiest not to write the code in a file. This is made possible because Python can be run as a command line itself.</p>
+			<p>Type the following on the Windows, Mac or Linux command line:</p>
+			<code>C:\Users\Your Name>python</code>
+			<p>From there you can write any python, including our hello world example from earlier in the tutorial:</p>
+			<code>C:\Users\Your Name>python
+Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:04:45)
+[MSC v.1900 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print("Hello, World!")</code>
+			<p>Which will write "Hello, World!" in the command line:</p>
+			<code>C:\Users\Your Name>python
+Python 3.6.4 (v3.6.4:d48eceb, Dec 19 2017, 06:04:45)
+[MSC v.1900 32 bit (Intel)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> print("Hello, World!")
+Hello, World! </code>
+			<p>Whenever you are done in the python command line, you can simply type the following to quit the python command line interface:</p>
+			<code>exit()</code>
+		</section>
+		<section class="main-section" id="Reference">
+			<header>Reference</header>
+            <p>All the documentation on this page has been taken from <a href="https://www.w3schools.com/python/python_getstarted.asp">w3schools.com</a></p>
+		</section>
+        </div>
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
