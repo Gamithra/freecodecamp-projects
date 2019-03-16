@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+.App {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 99vh;
+      display: flex;
+      flex-direction: row;
+}
+
+.input-area {
+    width: 50vw;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+.input-box {
+    width: 100%;
+    padding: 5%;
+    height: 100%;
+    border: none;
+    background: #fef;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    resize: none;
+    max-width: 70vw;
+}
+
+.preview-area {
+    width: 50%;
+    padding: 5%;
+    height: 100%;
+    background: #ffe;
+    resize: none;
+}
