@@ -3,24 +3,12 @@ import logo from './logo.svg';
 import './App.css';
 import marked from 'marked';
 
-const placeholdes =
-    `
-        # here is my h1 text!
-
-        ## this is a sub-heading
-
-        ###### this is some other stuff
-
-        \`inline code\`
-    `
-
-const placeholder = "# here \n## here \n###### h3\n[link](link)\n`code`\n```\nmultiline\ncode\n```\n**bold** \n_italic_\n**_both!_**\n~~cross~~\n- lists\n  - lists!\n> block quote\n![image](https://goo.gl/)"
+const placeholder = "# Heading 1 \n --- \n## Heading 2 \n###### Heading 3\n[this is a link!](https://gamithra.com/)\n`a line of code`\n```\nmultiple\nlines\nof code\n```\n**bold**, _italic_ and **_both bold and italic!_**\n~~i'm crossed out~~\n> block quote\n\n- lists\n  - nested lists! \n wow!\n \n \n![image](https://cdn.iconscout.com/icon/free/png-256/markdown-2-458334.png)"
 
 class App extends Component {
 
     constructor() {
         super();
-
 
         this.state = {
             currentInput: placeholder
@@ -47,11 +35,18 @@ class App extends Component {
 
         return (
             <div className="App">
-                <div className="input-area">
-                    <textarea placeholder={placeholder} id="editor" className="input-box" onChange={this.handleNewInput} value={this.state.currentInput} />
+                <div className="main-title"><h2>Markdown Previewer</h2></div>
+                <div className="headers">
+                    <div className="main-header" id="input-header"><h5>Write markdown in this box!</h5></div>
+                    <div className="main-header" id="preview-header"><h5>... and see the formatted version here!</h5></div>
                 </div>
-                <div className="preview-area" id="preview" dangerouslySetInnerHTML={this.getMarkdownText()} />
-
+                <div className="container">
+                    <div className="area" id="input-area">
+                        <textarea placeholder={placeholder} id="editor" className="input-box" onChange={this.handleNewInput} value={this.state.currentInput} />
+                    </div>
+                    <div className="area" id="preview-area" dangerouslySetInnerHTML={this.getMarkdownText()} />
+                </div>
+                <div className="footer"><h4>coded by gamithra</h4></div>
             </div>
         );
     }
